@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="userForm">
+        <h2>Thông Tin Tiểu Sử</h2>
+        <input type="text" id="fullName" placeholder="Họ và Tên">
+        <input type="date" id="birthDate">
+        <input type="text" id="cccd" placeholder="CCCD">
+        <input type="text" id="address" placeholder="Địa chỉ thường trú">
+        <button onclick="checkInfo()">Bắt đầu khảo sát</button>
+    </div> 
+
+    <div id="questionsContainer">
+        <div id="result"></div>
+        <div id="questions1">
+            <h2>Lựa chọn đúng sai</h2>
+        </div>
+        <div id="questions2">
+            <h2>Chọn 1 trong 4 đáp án</h2>
+        </div>
+        <div id="questions3">
+            <h2>Chọn nhiều đáp án</h2>
+        </div>
+        <div id="questions4">
+            <h2>Trả lời tự luận</h2>
+        </div>
+        <!-- Câu hỏi sẽ được thêm vào đây bằng JavaScript -->
+        <div id="btnContainer">
+            <button type="submit" id="submitBtn" onclick="result()">Hoàn thành</button>
+            <button id="backBtn" onclick="back()">Quay lại</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
